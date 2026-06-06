@@ -1,4 +1,4 @@
-#!/usr/bin/usr/bin/python3
+#!/usr/bin/python3
 import sys
 
 # Start the range from 1 to skip the script name

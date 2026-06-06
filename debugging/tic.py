@@ -1,4 +1,4 @@
-#!/usr/bin/usr/bin/python3
+#!/usr/bin/python3
 
 def print_board(board):
     for row in board:
