@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-
+#!/usr/bin/usr/bin/python3
 class Checkbook:
     def __init__(self):
         self.balance = 0.0
@@ -30,20 +29,20 @@ def main():
             try:
                 amount = float(input("Enter the amount to deposit: $"))
                 if amount < 0:
-                    print("Amount cannot be negative. Please try again.")
-                    continue
-                cb.deposit(amount)
+                    print("Amount cannot be negative.")
+                else:
+                    cb.deposit(amount)
             except ValueError:
-                print("Invalid amount. Please enter a valid numeric value.")
+                print("Invalid input. Please enter a valid numeric amount.")
         elif action.lower() == 'withdraw':
             try:
                 amount = float(input("Enter the amount to withdraw: $"))
                 if amount < 0:
-                    print("Amount cannot be negative. Please try again.")
-                    continue
-                cb.withdraw(amount)
+                    print("Amount cannot be negative.")
+                else:
+                    cb.withdraw(amount)
             except ValueError:
-                print("Invalid amount. Please enter a valid numeric value.")
+                print("Invalid input. Please enter a valid numeric amount.")
         elif action.lower() == 'balance':
             cb.get_balance()
         else:

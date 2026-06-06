@@ -1,11 +1,11 @@
-#!/usr/bin/python3
+#!/usr/bin/usr/bin/python3
 import sys
 
 def factorial(n):
     result = 1
     while n > 1:
         result *= n
-        n -= 1  # Fix: Decrement n to avoid an infinite loop
+        n -= 1  # Decrement n to avoid an infinite loop
     return result
 
 if __name__ == "__main__":
